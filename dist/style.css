@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: comfortaa, sans-serif;
+    font-size: 2rem;
+    background-color: palegoldenrod;
+}
+header{
+    padding: 2rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+button, input{
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    transition: all 0.3s ease;
+}
+button{
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.05);
+}
+input:focus{
+    transform: scale(1.01);
+}
+main{
+    padding: 2rem;
+}
+form{
+    padding: 1rem;
+    text-align: center;
+}
+.search-result{
+    display: none;
+    max-width: 32.5rem;
+    padding: 2rem;
+    border-radius: 5px;
+    margin: 2rem auto;
+    background-color: black;
+    color: white;
+}
+.search-result.active{
+    display: block;
+}
+.search-result > *{
+    text-align: center;
+    padding: 0.5rem;
+}
+.city-name{
+    padding-bottom: 1.5rem;
+    color: navajowhite;
+}
+.temperature{
+    padding-bottom: 1rem;
+}
